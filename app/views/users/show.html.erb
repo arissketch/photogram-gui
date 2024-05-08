@@ -11,13 +11,13 @@
   <dt>
   Edit user
   </dt>
-  <form action="/users">
+  <form action="/update_user/<%=@the_user.username%>" method="post">
 <dd>
     <label for="browser_username">Username</label>
     <input id="browser_username" type="text" name="input_username" value="<%= @the_user.username %>">
 
   <button>
-    Update actor
+    Update user
   </button>
   </dd>
   </form>
